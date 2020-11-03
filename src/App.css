@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Product {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 200px;
+  margin: 25pt;
+  width: 50%;
+}
+.CartItem {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 200px;
+  margin: 25pt;
+}
+
+.Product img, .CartItem img {
+  width: 200px;
+  max-width: 100%;
+}
+
+.product-list {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin: 2pt 20pt;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+.Cart {
+  display: flex;
+  flex-flow: column;
+  width: 20%;
+  max-width: 300pt;
+  min-width:100pt;
+  float: right;
+  background-color: #FFF;
+  border-bottom: 1px solid black;
+  text-align: center;
+  box-shadow:-3px 3px 10px;
+  max-height: 75%;
+  overflow-y:scroll;
+
+
+}
+
+.Header {
+  height: 50pt;
+  background-color: red ;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header h2, .Header h4 {
+  margin: 5pt;
+}
+.Header a {
+  text-decoration: none;
+
+}
+
+.button button {
+  padding: 2pt 6pt;
+  border-radius: 4pt;
+  margin: 2pt;
+  font-weight: 900;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.PDP img {
+  width: 300pt;
+}
+.PDP {
+  display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CartDetails {
+  display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
